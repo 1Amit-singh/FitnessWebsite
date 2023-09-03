@@ -213,6 +213,9 @@ h1{
     text-align: center;
     padding: 60px 0;
 }
+
+
+
 .massage-gun-top, .massage-gun-bottom{
     display: flex;
     justify-content: space-between;
@@ -264,6 +267,9 @@ h1{
 .benefits .feature{
     width: 80%;
 }
+
+
+
 .carousel-section{
     position: relative;
 }
@@ -279,6 +285,13 @@ h1{
     scroll-snap-type: x mandatory;
     -webkit-overflow-scrolling: touch;
 }
+.carousel::-webkit-scrollbar{
+    display: none;
+}
+.carousel {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
 .nav-btns{
     display: flex;
     z-index: 99;
@@ -298,6 +311,9 @@ h1{
 .active{
     background-color: var(--active-color);
 }
+
+
+
 .included-section{
     padding: 100px 100px 0 50px;
     display: flex;
@@ -343,4 +359,65 @@ h1{
     text-align: center;
     padding: 50px;
     font-size: 2.2rem;
+}
+
+@media screen and (max-width: 1250px) {
+    .massage-gun-top, .included-section{
+        flex-direction: column;
+        align-items: center;
+    }
+    .massage-gun-bottom{
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .massage-gun-top-right{
+        width: 100%;
+    }
+    .massage-gun-bottom #person, .massage-gun-top #massage-gun{
+        width: 70%;
+        height: 70%;
+        margin-bottom: 80px;
+        margin-top: 60px;
+    }
+    .benefits .feature{
+        width: 90%;
+    }
+    .massage-gun-top-right{
+        width: 90%;
+    }
+    .hero-left{
+        width: 100%;
+    }
+    .hero-section{
+        padding: 0 10vw  ;
+    }
+    .hero-bottom{
+        padding: 0;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 40px;
+    }
+    .hero-warranty-container, .hero-text-container{
+        width: 90%;
+    }
+    #included-img{
+        transform: translateX(-20%);
+        margin-bottom: 180px;
+    }
+    .included-left{
+        width: 90%;
+    }
+    .carousel{
+        margin-top: 60px;
+    }
+    .carousel img{ 
+        height: 60vh;
+    }
+    .massage-gun-top, .massage-gun-bottom{
+        padding: 0 1vw;
+    }
+    .included-section{
+        padding: 0 10vw;
+    }
 }
