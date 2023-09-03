@@ -5,6 +5,13 @@
     --active-color: #2BF6FA;
 }
 
+@font-face {
+    font-family: 'Peckham Press Trial';
+    src: url('../fonts/PeckhamPress-Trial.otf') format('otf'),
+         url('../fonts/PeckhamPress-Trial.otf') format('woff2');
+    /* Add any additional font properties like font-weight, font-style, etc. */
+  }  
+
 button{
     outline: none;
     border: none;
@@ -28,7 +35,7 @@ body {
   color: var(--text-color);
 }
 h1{
-    font-family: "Peckham Press Trial";
+    font-family: "Peckham Press Trial", "sans-serif";
 }
 /* img{
     object-fit: cover;
