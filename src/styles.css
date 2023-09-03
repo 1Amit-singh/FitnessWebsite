@@ -40,6 +40,7 @@ h1{
 .hero-section{
     width: 100%;
     padding: 0px 100px;
+    position: relative;
 }
 .hero-top{
     display: flex;
@@ -47,9 +48,43 @@ h1{
 .hero-right, .hero-left {
     width: 50%;
 }
+.hero-right img{
+    animation-name: fadeIn;
+    animation-duration: 2s;
+    animation-timing-function: ease;
+}
 .hero-text{
-    margin: 6rem 0 4rem 0;
     font-size: 6rem;
+    margin-bottom: 4.5rem;
+}
+.hero-text-container{
+    position: absolute;
+    width: 40%;
+    height: 130px;
+    top: 6rem;
+    overflow: hidden;
+}
+.description-container{
+    /* background-color: #0ff; */
+    position: absolute;
+    top: 24rem;
+    width: 40%;
+    height: 4.8rem;
+    overflow: hidden;
+}
+.hero-warranty-container{
+    /* background-color: #0ff; */
+    position: absolute;
+    top: 32rem;
+    width: 45%;
+    height: 8rem;
+    overflow: hidden;
+}
+#hero-text{
+    position: absolute;
+    animation-name: textAnimate;
+    animation-duration: 1s;
+    animation-timing-function: ease;   
 }
 .description{
     color: var(--description);
@@ -58,6 +93,14 @@ h1{
     letter-spacing: normal;
     height: fit-content; 
 }
+#animate-des{
+    position: absolute;
+    top: 0;
+    animation-name: textAnimate;
+    animation-duration: 1.5s;
+    animation-timing-function: ease;   
+}
+    
 .btn{
     display: flex;
     flex-direction: column;
@@ -66,10 +109,22 @@ h1{
     font-weight: bolder;
     font-size: 2rem;
     margin-bottom: 5rem;
+    transition: all .4s ease;
+    cursor: pointer;
+}
+.btn:hover{
+    box-shadow: 0px 0px 40px 5px #0ff;
 }
 .btn span{
     font-size: 1.2rem;
     font-weight: normal;
+}
+.hero-btn{
+    position: absolute;
+    top: 45rem;
+    animation-name: fadeIn;
+    animation-duration: 1.7s;
+    animation-timing-function: ease;
 }
 .hero-warranty{
     font-family: 'Inter', sans-serif;
@@ -78,23 +133,63 @@ h1{
     font-size: 4rem;
     font-weight: bold;
     letter-spacing: 1.5px;
-    margin-bottom: 40px;
+    position: absolute;
+    animation-name: fadeIn;
+    animation-duration: 1.7s;
+    animation-timing-function: ease; 
 }
 .hero-warranty span{
     font-size: 2.5rem;
 }
+.counter{
+    transition: all 1s linear;
+}
+@keyframes textAnimate {
+    0%{
+        opacity: 0;
+        transform: rotate(20deg);
+        top: 210px;
+    }
+    50%{
+        opacity: .4;
+    }
+    100%{
+        top: 0;
+        transform: rotate(0deg);
+        opacity: 1;
+
+    }
+}
+@keyframes fadeIn{
+    0%{
+        opacity: 0;
+        transform: translateY(40%);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
 .buy-now{
-    margin-bottom: 20px;
+    position: absolute;
+    top: 58rem;
     font-size: 1.8rem;
     font-weight: bold;
 }
 .express-text{
+    position: absolute;
+    top: 62rem;
     margin-bottom: 50px;
     font-size: 2.2rem;
     font-weight: bold;
     color: var(--active-color);
+    animation-name: fadeIn;
+    animation-duration: 1.7s;
+    animation-timing-function: ease;
 }
 .logos{
+    position: absolute;
+    top: 68rem;
     display: flex;
     gap: 30px;
 }
