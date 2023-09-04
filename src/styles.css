@@ -69,10 +69,11 @@ h1{
 }
 .hero-text-container{
     position: absolute;
-    width: 40%;
+    width: 60%;
     height: 130px;
     top: 6rem;
     overflow: hidden;
+    /* background-color: red; */
 }
 .description-container{
     /* background-color: #0ff; */
@@ -86,7 +87,7 @@ h1{
     /* background-color: #0ff; */
     position: absolute;
     top: 32rem;
-    width: 45%;
+    width: 80%;
     height: 8rem;
     overflow: hidden;
 }
@@ -232,6 +233,7 @@ h1{
 }
 .massage-gun-top-right{
     width: 50%;
+    /* background-color: red; */
 }
 .massage-gun-top>img{
     width: 500px;
@@ -330,6 +332,7 @@ h1{
 }
 .included-right, .included-left{
     width: 44%;
+    /* background-color: maroon; */
 }
 .included-section .hero-text{
     font-size: 4rem;
@@ -388,9 +391,6 @@ h1{
         flex-direction: column-reverse;
         align-items: center;
     }
-    .massage-gun-top-right{
-        width: 100%;
-    }
     .massage-gun-bottom #person, .massage-gun-top #massage-gun{
         width: 70%;
         height: 70%;
@@ -400,7 +400,7 @@ h1{
     .benefits .feature{
         width: 90%;
     }
-    .massage-gun-top-right{
+    .massage-gun-top-right, .massage-gun-bottom-left{
         width: 90%;
     }
     .hero-left{
@@ -419,9 +419,13 @@ h1{
     .hero-warranty-container, .hero-text-container{
         width: 90%;
     }
+    .included-section{
+        padding: 200px;
+        /* background-color: purple; */
+    }
     #included-img{
-        transform: translateX(-20%);
-        margin-bottom: 180px;
+        transform: translateX(-35%);
+        margin-bottom: 100px;
     }
     .included-left{
         width: 90%;
@@ -440,6 +444,61 @@ h1{
     }
     .included-section{
         padding: 0 10vw;
+    }
+}
+
+@media screen and (max-width: 800px){
+    .hero-text-container{
+        height: 210px;
+        z-index: 99;
+        /* background-color: red; */
+    }
+    .hero-text{
+        font-size: 4.8rem;
+    }
+    .description-container{
+        top: 25rem;
+        width: 90%;
+    }
+    #animate-des{
+        font-size: 1.7rem;
+    }
+    .hero-warranty-container{
+        top: 32rem;
+        height: 100px;
+    }
+    .hero-warranty{
+        font-size: 2rem;
+        gap: 0px;
+    }
+    .hero-warranty{
+        font-size: 2rem;
+        gap: 20px;
+    }
+    .hero-warranty span,.hero-warranty .description{
+        font-size: 1.5rem;
+    }
+    .rating img{
+        width: 30px;
+    }
+    .section-heading{
+        font-size: 6rem;
+        padding: 60px 0 0 0;
+    }   
+    .last{
+        height: 450px;
+    }
+    .last .play-btn{
+        width: 50px;
+    }
+    .last .video-frame{
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+    .last .btn{
+        font-size: 2.2rem;
+        padding: 2rem 2.5rem;
     }
 }
 
