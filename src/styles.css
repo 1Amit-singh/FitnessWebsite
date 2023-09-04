@@ -40,9 +40,13 @@ h1{
     object-fit: cover;
     object-position: center;
 } */
+
+/* *************************CSS for Header Section************************* */
 .header{
     padding: 40px 100px;
 }
+
+/* ************************* Hero Secttion ************************* */
 .hero-section{
     width: 100%;
     padding: 0px 100px;
@@ -206,15 +210,8 @@ h1{
     padding: 0 250px;
     align-items: center;
 }
-.section-heading{
-    font-size: 9rem;
-    letter-spacing: 3px;
-    color: #313131;
-    text-align: center;
-    padding: 60px 0;
-}
 
-
+/* ************************* Massage Gun Secttion ************************* */
 
 .massage-gun-top, .massage-gun-bottom{
     display: flex;
@@ -226,6 +223,13 @@ h1{
     font-size: 4rem;
     line-height: 5.5rem;
 } 
+.section-heading{
+    font-size: 9rem;
+    letter-spacing: 3px;
+    color: #313131;
+    text-align: center;
+    padding: 60px 0;
+}
 .massage-gun-top-right{
     width: 50%;
 }
@@ -254,8 +258,10 @@ h1{
     align-items: center;
     /* background-color: #2BF6FA; */
 }
-.last{
+#last{
     align-items: start;
+    /* background-color: #0ff; */
+    height: fit-content;
 }
 .feature .description{
     margin: 0;
@@ -269,7 +275,7 @@ h1{
 }
 
 
-
+/* ************************* Carousel Secttion ************************* */
 .carousel-section{
     position: relative;
 }
@@ -314,6 +320,8 @@ h1{
 
 
 
+/* ************************* Included Secttion ************************* */
+
 .included-section{
     padding: 100px 100px 0 50px;
     display: flex;
@@ -330,11 +338,19 @@ h1{
     font-size: 2.1rem;
     margin: 0 0 20px 0;
 }
+
+/* ************************* Recovery Secttion ************************* */
 .recovery-section img{
     width: 100%;
 }
+
+/* ************************* Last Secttion ************************* */
+
 .last{
     position: relative;
+}
+.video-frame{
+    width: 100%;
 }
 .last .btn{
     position: absolute;
@@ -360,6 +376,8 @@ h1{
     padding: 50px;
     font-size: 2.2rem;
 }
+
+/* ************************* Media Queries ************************* */
 
 @media screen and (max-width: 1250px) {
     .massage-gun-top, .included-section{
@@ -414,10 +432,108 @@ h1{
     .carousel img{ 
         height: 60vh;
     }
+    .nav-btns{
+        bottom: 20px;
+    }
     .massage-gun-top, .massage-gun-bottom{
         padding: 0 1vw;
     }
     .included-section{
         padding: 0 10vw;
     }
+}
+
+@media screen and (max-width: 400px){
+    body{
+        overflow-x: hidden;
+    }
+    .hero-text-container{
+        height: 210px;
+        z-index: 99;
+        /* background-color: red; */
+    }
+    .hero-text{
+        font-size: 4.8rem;
+    }
+    .description-container{
+        top: 29rem;
+        width: 90%;
+    }
+    #animate-des{
+        font-size: 1.7rem;
+    }
+    .hero-warranty-container{
+        top: 39rem;
+    }
+    .hero-warranty{
+        font-size: 2rem;
+        gap: 0px;
+    }
+    .hero-warranty span,.hero-warranty .description{
+        font-size: 1.5rem;
+    }
+    .rating img{
+        width: 20px;
+    }
+    .hero-btn{
+        padding: 1rem 2rem;
+        font-size: 1.5rem;
+        top: 50rem;
+    }
+    .hero-btn span{
+        font-size: 0.9rem;
+    }
+    .buy-now{
+        font-size: 1.2rem;
+        top: 59rem;
+    }  
+    .express-text{
+        font-size: 1.5rem;
+    }
+    .hero-right img{
+        filter: brightness(40%);
+    }
+    .hero-bottom img{
+        width: 40%;
+    }
+    .section-heading{
+        font-size: 5rem;
+        padding: 60px 0 0 0;
+    }
+    .massage-gun-top-right{
+        padding: 0px 0;
+        /* background-color: red; */
+    }
+    .carousel img{ 
+        height: 35vh;
+    }
+    #included-img{
+        width: 400px;
+        transform: translateX(-40%);
+        margin-bottom: 80px;
+    }
+    .last{
+        height: 400px;
+    }
+    .last .play-btn{
+        width: 35px;
+    }
+    .last .video-frame{
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+    .last .btn{
+        font-size: 2rem;
+        padding: 1.5rem 2rem;
+    }
+    .footer{
+        padding: 20px;
+        font-size: 1.5rem;
+    }
+    #massage-hero{
+        font-size: 3.5rem;
+        width: 100%;
+    }
+
 }
