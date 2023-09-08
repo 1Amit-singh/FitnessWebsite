@@ -24,7 +24,7 @@ button{
 }
 html{
     font-size: 9.5px;
-    /* overflow-x: hidden; */
+    overflow-x: hidden;
 }
 body {
   height: 100%;
