@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
@@ -72,7 +73,7 @@
 
         <section class="massage-gun">
             <h1 class="section-heading">massage gun</h1>
-            <div class="massage-gun-top">
+            <div class="massage-gun-top" data-aos="fade-right">
                 <img src="Assets/massage-gun.png" alt="" id="massage-gun">
                 <div class="massage-gun-top-right">
                     <h1 class="hero-text" id="massage-hero">What makes this gun different from the rest</h1>
@@ -120,7 +121,7 @@
                     </div>
                 </div>
             </div>
-            <div class="massage-gun-bottom">
+            <div class="massage-gun-bottom" data-aos="fade-left" data-aos-offset="400">
                 <div class="massage-gun-bottom-left">
                     <h1 class="hero-text" id="massage-hero">The benefits</h1>
                     <div class="benefits">
@@ -164,7 +165,8 @@
             </div>
         </section>
 
-        <div class="wrapper">
+        <!-- Carousel  -->
+        <div class="wrapper" data-aos="zoom-out" data-aos-offset="400">
             <div class="container">
                 <div class="carousel">
                     <div class="element1" id="1"><img src="Assets/carousel1.png" alt=""></div>
@@ -185,7 +187,7 @@
             </div>
         </div>
 
-        <section class="included-section">
+        <section class="included-section" data-aos="fade-right">
             <div class="included-right">
                 <img src="Assets/include.png" alt="" id="included-img">
             </div>
@@ -203,11 +205,11 @@
             </div>
         </section>
 
-        <section class="recovery-section">
+        <section class="recovery-section" data-aos="fade-up">
             <img src="Assets/recovery-banner.png" alt="">
         </section>
 
-        <section class="last">
+        <section class="last" data-aos="zoom-in" data-aos-offset="300">
             <img src="Assets/video-frame.png" alt="" class="video-frame">
             <button class="btn">BUY NOW</button>
             <img src="Assets/play-btn.png" class="play-btn" alt="">
@@ -218,6 +220,12 @@
         <p>@2021 - Range of motion </p>
     </footer>
 
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        offset: 520,
+      });
+    </script>
     <script src="index.js"></script>
 </body>
 </html>
